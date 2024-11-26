@@ -6,13 +6,15 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('main_page', '0002_reviewbook'),
+        ("main_page", "0002_reviewbook"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='books',
-            name='available_copies',
-            field=models.PositiveIntegerField(default=0, null=True, verbose_name='Количество доступных экземпляров'),
+            model_name="books",
+            name="available_copies",
+            field=models.PositiveIntegerField(
+                default=0, null=True, verbose_name="Количество доступных экземпляров"
+            ),
         ),
     ]

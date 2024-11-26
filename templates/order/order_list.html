@@ -8,8 +8,10 @@
                 <p class="card-text">{{ i.phone_number }}</p>
                 <p class="card-text">{{ i.email }}</p>
                 <p class="card-text">{{ i.book }}</p>
+                <a href="{% url 'order_detail' i.id %}" class="btn btn-primary">Подробнее</a>
 
-        {% endfor %}
+
+                {% endfor %}
 
             </div>
         </div>

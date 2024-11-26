@@ -7,23 +7,43 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Tag',
+            name="Tag",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=50, verbose_name='Укажите ТЭГ')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=50, verbose_name="Укажите ТЭГ")),
             ],
         ),
         migrations.CreateModel(
-            name='Old_Man',
+            name="Old_Man",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('age', models.CharField(max_length=50, verbose_name='Укажите название тэга')),
-                ('tags', models.ManyToManyField(to='hashtags.tag')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "age",
+                    models.CharField(
+                        max_length=50, verbose_name="Укажите название тэга"
+                    ),
+                ),
+                ("tags", models.ManyToManyField(to="hashtags.tag")),
             ],
         ),
     ]
