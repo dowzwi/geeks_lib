@@ -11,6 +11,7 @@ urlpatterns = [
     path('showtime/', views.show_time),
     path('', include('main_page.urls')),
     path('', include('hashtags.urls')),
+    path('basket/', include('basket.urls')),
 
 ]
 urlpatterns += static(settings.MEDIA_URL,

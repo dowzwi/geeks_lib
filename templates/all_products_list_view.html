@@ -1,21 +1,21 @@
 {% include 'header.html' %}
 
 <div class="container my-5">
-        <div class="d-flex justify-content-around mb-4">
-            <a href="{% url 'olds_products_list_view' %}" class="btn btn-primary">Старики</a>
-            <a href="{% url 'youth_products_list_view' %}" class="btn btn-secondary">Молодые</a>
-            <a href="{% url 'baby_products_list_view' %}" class="btn btn-secondary">Дети</a>
-
-        </div>
-        {% for i in products_list %}
-        <div class="card" style="width: 18rem; margin: 0 auto;">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfcqy_03VSGFsyLhnPtdSNeg4Bc_8ejejYOA&s" class="card-img-top" alt="Изображение">
-            <div class="card-body">
-                <h5 class="card-title">{{ i.title }}</h5>
-                <p class="card-text">{{ i.price }}</p>
-            </div>
-        </div>
-        {% endfor %}
-
+    <div class="d-flex justify-content-around mb-4">
+        <a href="{% url 'olds_products_list_view' %}" class="btn btn-primary">Старики</a>
+        <a href="{% url 'youth_products_list_view' %}" class="btn btn-secondary">Молодые</a>
+        <a href="{% url 'baby_products_list_view' %}" class="btn btn-secondary">Дети</a>
     </div>
+
+    {% for i in products_list %}
+    <div class="card" style="width: 18rem; margin: 0 auto;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfcqy_03VSGFsyLhnPtdSNeg4Bc_8ejejYOA&s" class="card-img-top" alt="Изображение">
+        <div class="card-body">
+            <h5 class="card-title">{{ i.title }}</h5>
+            <p class="card-text">{{ i.price }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
 {% include 'footer.html' %}

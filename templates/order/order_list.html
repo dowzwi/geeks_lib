@@ -1,0 +1,18 @@
+{% include 'header.html' %}
+
+        {% for i in orders %}
+        <div class="card" style="width: 18rem; margin: 0 auto;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfcqy_03VSGFsyLhnPtdSNeg4Bc_8ejejYOA&s" class="card-img-top" alt="Изображение">
+            <div class="card-body">
+                <h5 class="card-title">{{ i.name }}</h5>
+                <p class="card-text">{{ i.phone_number }}</p>
+                <p class="card-text">{{ i.email }}</p>
+                <p class="card-text">{{ i.book }}</p>
+
+        {% endfor %}
+
+            </div>
+        </div>
+
+
+{% include 'footer.html' %}

@@ -15,6 +15,7 @@ class books (models.Model):
     author = models.CharField(max_length=100, verbose_name='Укажите имя автора')
     audio = models.URLField(verbose_name='Вставьте ссылку на аудио книгу с YouTube')
     email = models.EmailField(verbose_name='Укажите почту автора')
+    available_copies = models.PositiveIntegerField(default=0, verbose_name="Количество доступных экземпляров", null=True)
 
     def average_rating(self):
         reviews = self.review_books.all()
