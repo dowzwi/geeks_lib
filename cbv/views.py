@@ -15,7 +15,7 @@ class BasketListView(generic.ListView):
 class CreateCBV(generic.CreateView):
     template_name = 'order/create_order.html'
     form_class = OrderForm
-    success_url = 'order_class/'
+    success_url = '/order_class/'
 
     def form_valid(self, form):
         print(form.cleaned_data)
