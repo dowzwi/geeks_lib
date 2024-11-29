@@ -36,11 +36,28 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false" style="color: yellow;">
-                        CRUD SYSTEM
+                        ORDER
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="{% url 'create_order' %}">Добавить</a></li>
                         <li><a class="dropdown-item" href="{% url 'order_list' %}">Лист Заказов</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Изменить</a></li>
+                    </ul>
+                </li>
+
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false" style="color: yellow;">
+                        CBV
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{% url 'create_order' %}">Добавить</a></li>
+                        <li><a class="dropdown-item" href="{% url 'order_class_list' %}">Лист Заказов</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
