@@ -30,6 +30,8 @@ INSTALLED_APPS = [
     "hashtags",
     "basket",
     "cbv",
+    "parsing_kinogo",
+    "mobile_devices",
 ]
 
 MIDDLEWARE = [

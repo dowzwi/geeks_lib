@@ -13,6 +13,7 @@ urlpatterns = [
     path("", include("hashtags.urls")),
     path("basket/", include("basket.urls")),
     path("", include("cbv.urls")),
+    path("devices/", include('mobile_devices.urls')),
 
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

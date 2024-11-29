@@ -3,7 +3,11 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 class books(models.Model):
-    GENRE_CHOICE = (("Манга", "Манга"), ("Комедия", "Комедия"), ("Сказка", "Сказка"))
+    GENRE_CHOICE = (
+        ("Манга", "Манга"),
+        ("Комедия", "Комедия"),
+        ("Сказка", "Сказка")
+    )
     image = models.ImageField(
         upload_to="books/", verbose_name="Загрузите обложку книги"
     )

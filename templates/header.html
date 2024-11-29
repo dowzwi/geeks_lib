@@ -64,11 +64,16 @@
                         <li><a class="dropdown-item" href="#">Изменить</a></li>
                     </ul>
                 </li>
+
+
                 <li class="nav-item">
                     <a class="nav-link enable" href="#" style="color: yellow;">Регистрация</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link enable" href="#" style="color: yellow;">Другие книги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enable" href="{% url 'device_list' %}" style="color: yellow;">Устройства</a>
                 </li>
             </ul>
             <form action = "{% url 'search' %}" method = "GET" class="d-flex" role="search">
